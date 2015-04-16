@@ -1,0 +1,185 @@
+/* GLOBAL HEADER
+ * ----------------------------------------- */
+.header-background {
+background-color:#5a0000;
+}
+
+
+.globalheader {
+    background-color: #333;
+}
+
+.globalheader ul {
+    height:30px;
+    float:right;
+	list-style:none;
+	padding:0;
+	margin:0;
+    padding-right: 40px;
+}
+.globalheader ul::after  {
+    content:"";
+    display:block;
+    width:100%;
+}
+.globalheader ul li { float:left;}
+.globalheader ul li a.home,
+.globalheader ul li a.search,
+.globalheader ul li a.social {
+    display:block; 
+    height:30px;
+    width:30px;
+}
+.globalheader ul li a {
+    background-image: url(_h5ai_img/ou-globalheader-icons.png);
+    background-repeat:no-repeat;
+	line-height:0;
+}
+.globalheader ul li a.home { background-position:0 0; }
+.globalheader ul li a.home:hover { background-position:0 -30px; }
+.globalheader ul li a.search { background-position:-30px 0; }
+.globalheader ul li a.search:hover { background-position:-30px -30px; }
+.globalheader ul li a.social { background-position:-60px 0; }
+.globalheader ul li a.social:hover { background-position:-60px -30px; }
+.globalheader ul li a:hover { background-color:#e8e8e8; }
+.globalheader ul li.wordmark {
+    text-indent:-99999px;
+    width:200px;
+    height:30px;
+    margin-left:1em;
+    background-image:url(_h5ai_img/ou-globalheader-wordmark.png);
+    background-repeat:no-repeat;
+    background-position:center center;
+}
+
+@media only screen and (max-width: 479px) {
+    .globalheader ul li.wordmark {
+        display: none;
+    }
+}
+
+a.tip { position:relative; }
+a.tip span { display: none; }
+/* the span will display just on :hover state */
+a.tip:hover span { 
+    position:absolute;
+    z-index:25;
+    top:135%; 
+    left:-3.75em;  
+    width:10em;
+    display:block;
+    margin:0;
+    padding:1.25em 0;
+    border:1px solid #444;
+    background-image:url(_h5ai_img/ou-globalheader-tipbg.gif);
+    background-repeat:repeat;
+    white-space:nowrap;
+    text-align: center;
+    color:#FFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:0.85em;
+}
+/* the arrow */
+a.tip:hover span::before {
+    content:"";
+    width:100%;
+    display:block;
+    background-image:url(_h5ai_img/ou-globalheader-tiparrow.png);
+    background-repeat:no-repeat;
+    background-position:top center;
+    bottom:100%;
+    left:0;
+    height:9px;
+    position:absolute;
+}
+
+
+.header{
+    background-color: #ececec;
+    min-height: 100%;
+    padding: 0;
+}
+
+#content-footer {
+    background-color: #333;
+    padding: 0;
+    min-height: 119px;
+    color: #999;
+//    font-size: .6em;
+	font-family: Arial;
+//    line-height: 1.2em;
+}
+
+.footer hr { 
+	background-color: #999; 
+	height: 1px; 
+	border: 0; 
+}
+
+.footer a{
+    color: #ececec !important;
+    text-decoration: none;
+	font-weight: bold;
+}
+
+.footer a:hover{
+    text-decoration: underline;
+}
+
+.footer ul{ 
+	margin: 0; 
+	padding: 0;
+}
+
+.footer li{
+    list-style: none;
+    margin: 0 0 .2em 0;
+}
+
+.footer img {
+	border: 1px solid #333;
+	padding: 5px;
+	height: auto;
+    max-width: 100%;
+}
+
+.footer img:hover {
+	border: 1px solid #fff;
+	padding: 5px;
+	height: auto;
+    max-width: 100%;
+	
+}
+
+
+/* Social Icons */
+.social ul{
+    display: block;
+}
+
+.social ul li a.facebook,
+.social ul li a.twitter,
+.social ul li a.youtube,
+.social ul li a.pinterest
+ {
+    display:block; 
+    height:45px;
+    width:45px;
+    float:left;
+}
+
+.social ul li a {
+    background-image: url(_h5ai_img/social-icons.png);
+    background-repeat:no-repeat;
+	line-height:0;
+}
+
+.social ul li a.facebook { background-position:0 0; }
+.social ul li a.facebook:hover { background-position:-46px 0; }
+.social ul li a.twitter { background-position:0 -46px; }
+.social ul li a.twitter:hover { background-position:-46px -46px; }
+.social ul li a.youtube { background-position: 0 -92px; }
+.social ul li a.youtube:hover { background-position: -46px -92px; }
+.social ul li a.pinterest { background-position: 0 -276px; }
+.social ul li a.pinterest:hover { background-position: -46px -276px; }
+
